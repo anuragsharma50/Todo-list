@@ -1,0 +1,109 @@
+*,html,body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #2d2d2d;
+    color: #e5e5e5;
+    font-family: 'Caveat', cursive;
+}
+
+.container {
+    width: 450px;
+    min-height: 600px;
+    margin: 8px auto;
+    padding: 16px;
+    border: 2px solid white;
+}
+
+.input-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#input-box{
+    width: 330px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #a7a7a7;
+    font-size: 28px;
+    color: white;
+    padding: 5px;
+}
+
+#add-btn {
+    width: 75px;
+    height: 40px;
+}
+
+ul {
+    list-style: none;
+    font-size: 24px;
+    padding: 4px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.text {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    -webkit-appearance: none;
+	background-color: transparent;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+}
+
+.text:checked + label {
+    text-decoration: line-through;
+}
+
+.text:active, .text:checked:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.text:checked {
+	background-color: transparent;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
+}
+
+.text:checked:after {
+	content: '\2714';
+    font-size: 28px;
+    position: absolute;
+    top: -13px;
+    left: 3px;
+    color: #e5e5e5;
+}
+
+label {
+    font-size: 32px;
+    padding: 5px;
+}
+
+#delete{
+    margin-left: auto;
+}
+
+span {
+    margin-top: 10px;
+    display: inline-block;
+    color: #cf9696;
+    font-size: 20px;
+}
+
+#count{
+    color: #e5e5e5;
+}
